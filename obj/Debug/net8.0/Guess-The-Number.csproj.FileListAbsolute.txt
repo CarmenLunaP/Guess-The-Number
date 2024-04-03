@@ -1,0 +1,15 @@
+C:\Users\usuario\Documents\Carmen\LABORATORIA\C#\Guess-The-Number\bin\Debug\net8.0\Guess-The-Number.exe
+C:\Users\usuario\Documents\Carmen\LABORATORIA\C#\Guess-The-Number\bin\Debug\net8.0\Guess-The-Number.deps.json
+C:\Users\usuario\Documents\Carmen\LABORATORIA\C#\Guess-The-Number\bin\Debug\net8.0\Guess-The-Number.runtimeconfig.json
+C:\Users\usuario\Documents\Carmen\LABORATORIA\C#\Guess-The-Number\bin\Debug\net8.0\Guess-The-Number.dll
+C:\Users\usuario\Documents\Carmen\LABORATORIA\C#\Guess-The-Number\bin\Debug\net8.0\Guess-The-Number.pdb
+C:\Users\usuario\Documents\Carmen\LABORATORIA\C#\Guess-The-Number\obj\Debug\net8.0\Guess-The-Number.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usuario\Documents\Carmen\LABORATORIA\C#\Guess-The-Number\obj\Debug\net8.0\Guess-The-Number.AssemblyInfoInputs.cache
+C:\Users\usuario\Documents\Carmen\LABORATORIA\C#\Guess-The-Number\obj\Debug\net8.0\Guess-The-Number.AssemblyInfo.cs
+C:\Users\usuario\Documents\Carmen\LABORATORIA\C#\Guess-The-Number\obj\Debug\net8.0\Guess-The-Number.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Documents\Carmen\LABORATORIA\C#\Guess-The-Number\obj\Debug\net8.0\Guess-The-Number.sourcelink.json
+C:\Users\usuario\Documents\Carmen\LABORATORIA\C#\Guess-The-Number\obj\Debug\net8.0\Guess-The-Number.dll
+C:\Users\usuario\Documents\Carmen\LABORATORIA\C#\Guess-The-Number\obj\Debug\net8.0\refint\Guess-The-Number.dll
+C:\Users\usuario\Documents\Carmen\LABORATORIA\C#\Guess-The-Number\obj\Debug\net8.0\Guess-The-Number.pdb
+C:\Users\usuario\Documents\Carmen\LABORATORIA\C#\Guess-The-Number\obj\Debug\net8.0\Guess-The-Number.genruntimeconfig.cache
+C:\Users\usuario\Documents\Carmen\LABORATORIA\C#\Guess-The-Number\obj\Debug\net8.0\ref\Guess-The-Number.dll
