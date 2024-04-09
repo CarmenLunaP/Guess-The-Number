@@ -1,7 +1,7 @@
 using System;
 
 namespace Guess_The_Number
-{
+{ 
     public class Player
     {
         public string Name { get; private set; }
@@ -16,7 +16,7 @@ namespace Guess_The_Number
         public void MakeGuess()
         {
             Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.Write("Can you guess the secret number? Enter a number between 1 and 100:");
+            Console.Write("Can you guess the secret number? Enter a number between 1 and 100: ");
             Console.ResetColor();
             LastGuess = Convert.ToInt32(Console.ReadLine());
         }
