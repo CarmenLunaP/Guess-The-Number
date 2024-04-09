@@ -13,7 +13,7 @@ namespace Guess_The_Number
             var name = Console.ReadLine();
             Console.WriteLine($"{Environment.NewLine}Hello {name}, Welcome to Guess the Number game");
             Console.ResetColor();
-
+            // Hola
             Game game = new Game(name);
             game.PlayGame();
         }
