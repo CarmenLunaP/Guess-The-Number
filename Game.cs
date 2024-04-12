@@ -5,75 +5,89 @@ namespace Guess_The_Number
     public class Game
     {
         private readonly Player player;
-        private readonly int secretNumber;
+        private int secretNumber;
 
-        public Game(string playerName)
+        public Game(Player player)
         {
-            Random random = new Random();
-            secretNumber = random.Next(1, 101);
-            player = new Player(playerName);
+            this.player = player;
+            InitializeGame();
         }
 
         public void PlayGame()
         {
             bool playAgain = true;
-
             while (playAgain)
             {
                 int guesses = 0;
 
-                // Console.WriteLine($"Hello {player.Name}, Welcome to Guess the Number game");
-
-                while (true)
+                while (playAgain)
                 {
                     player.ResetLastGuess();
-                    while (player.LastGuess != secretNumber)
+                    while (player.GetLastGuess() != secretNumber)
                     {
-                        player.MakeGuess();
+                        player.MakeGuess(); // Llama al método MakeGuess() de Player
                         guesses++;
 
-                        if (player.LastGuess > secretNumber)
+                        if (player.GetLastGuess() > secretNumber)
                         {
                             Console.ForegroundColor = ConsoleColor.Red;
-                            Console.WriteLine(player.LastGuess + " is too high!");
+                            Console.WriteLine(player.GetLastGuess() + " is too high!");
                             Console.WriteLine("Try a lower number.");
                             Console.ResetColor();
                         }
-                        else if (player.LastGuess < secretNumber)
+                        else if (player.GetLastGuess() < secretNumber)
                         {
                             Console.ForegroundColor = ConsoleColor.Yellow;
-                            Console.WriteLine(player.LastGuess + " is too low!");
+                            Console.WriteLine(player.GetLastGuess() + " is too low!");
                             Console.WriteLine("Try a higher number.");
                             Console.ResetColor();
                         }
                     }
 
-                    Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine(player.LastGuess + " is Correct! You guessed it in " + guesses + " attempts.");
-                    Console.ResetColor();
+                    if (CheckGuess()) // Verificar si la conjetura es correcta
+                    {
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine(player.GetLastGuess() + " is Correct! You guessed it in " + guesses + " attempts.");
+                        Console.ResetColor();
+                        break; // Finalizar el juego si la conjetura es correcta
+                    }
+                }
 
-                    Console.ForegroundColor = ConsoleColor.Cyan;
-                    Console.WriteLine("Would you like to play again? (y/n)");
-                    Console.ResetColor();
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine("Would you like to play again? (y/n)");
+                Console.ResetColor();
 
-                    var playAgainInput = Console.ReadLine();
-                    if (playAgainInput.ToLower() == "y")
-                    {
-                        break;
-                    }
-                    else if (playAgainInput.ToLower() == "n")
-                    {
-                        playAgain = false;
-                        break;
-                    }
-                    else
-                    {
-                        Console.WriteLine("Invalid input. Please enter 'y' to play again or 'n' to quit.");
-                    }
+                var playAgainInput = Console.ReadLine();
+                if (playAgainInput?.ToLower() == "n")
+                {
+                    break;
+                }
+                else if (playAgainInput?.ToLower() != "y")
+                {
+                    Console.WriteLine("Invalid input. Please enter 'y' to play again or 'n' to quit.");
+                }
+                else
+                {
+                    InitializeGame();
                 }
             }
         }
+
+        private void InitializeGame()
+        {
+            RandomNumberGenerator();
+        }
+
+        private void RandomNumberGenerator()
+        {
+            Random random = new Random();
+            secretNumber = random.Next(1, 101);
+        }
+
+        private bool CheckGuess()
+        {
+            return player.GetLastGuess() == secretNumber;
+        }
     }
 }
-
 
