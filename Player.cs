@@ -1,7 +1,3 @@
-// Player.cs
-using System;
-using System.Collections.Generic;
-
 namespace Guess_The_Number
 {
     public abstract class Player
@@ -10,6 +6,7 @@ namespace Guess_The_Number
         public int LastGuess;
         public List<int> Guesses;
 
+        //Contructor de la clase abstracta player
         protected Player(string name)
         {
             Name = name;
@@ -17,54 +14,19 @@ namespace Guess_The_Number
             Guesses = new List<int>();
         }
 
+        //Metodo abstracto que sera usado en Huma y AIP player
         public abstract void MakeGuess();
 
+        //Metodo donde atrapo el ultimo intento del jugador
         public int GetLastGuess()
         {
             return LastGuess;
         }
 
+        //Metodo donde reinicio el juego reunicia las suposiciones
         public void ResetLastGuess()
         {
             LastGuess = 0;
         }
     }
 }
-
-
-
-// using System;
-
-// namespace Guess_The_Number
-// {
-//     public class Player
-//     {
-//         public string Name { get; private set; }
-//         private int lastGuess;
-
-//         public Player(string name)
-//         {
-//             Name = name;
-//             lastGuess = 0;
-//         }
-
-//         public void MakeGuess()
-//         {
-//             Console.ForegroundColor = ConsoleColor.Cyan;
-//             Console.Write("Enter a number between 1 and 100:");
-//             Console.ResetColor();
-//             lastGuess = Convert.ToInt32(Console.ReadLine());
-//         }
-
-//         public int GetLastGuess()
-//         {
-//             return lastGuess;
-//         }
-
-//         public void ResetLastGuess()
-//         {
-//             lastGuess = 0;
-//         }
-//     }
-// }
-
