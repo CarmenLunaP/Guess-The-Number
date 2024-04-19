@@ -36,6 +36,23 @@ namespace GuessTheNumberTests
             Assert.IsTrue(secretNumber >= 1 && secretNumber <= 100);
         }
 
+     [TestMethod]
+    public void CheckGuess_Returns_True_When_Human_Guess_Is_Correct()
+    {
+        // Arrange
+        var humanPlayer = new HumanPlayer("Marcos");
+        var aiPlayer = new AIPlayer();
+        var game = new Game(humanPlayer, aiPlayer);
+        var secretNumber = game.GetSecretNumber();
+        humanPlayer.LastGuess = secretNumber; // simulo la susposicion correcta
+
+        // Act
+        var result = game.CheckGuess();
+
+        // Assert
+        Assert.IsTrue(result);
+    }
+
         // [TestMethod]
         // public void TestHumanPlayerWin()
         // {

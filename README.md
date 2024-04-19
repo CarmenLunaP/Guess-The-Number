@@ -1,4 +1,4 @@
-![Bannert](../img/Banner.png)
+![Bannert](./GuessTheNumber/img/Banner.png)
 
 ### Guess The Number
 
@@ -40,6 +40,6 @@ Carmen Luna
 
 #### Console Output
 
-![Console Output](../img/project.jpg)
+![Console Output](./GuessTheNumber/img/project.jpg)
 
 To run the game, simply start the project from the terminal and follow the instructions displayed. Have fun playing and exploring the logic behind the "Guess The Number" game in C#.
