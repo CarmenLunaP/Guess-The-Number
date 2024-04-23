@@ -1,4 +1,4 @@
-![Bannert](./GuessTheNumber/img/Banner.png)
+![Bannert](../Guess-The-Number/GuessTheNumber/img/Banner.png)
 
 ### Guess The Number
 
@@ -33,13 +33,37 @@ The project addresses the following learning objectives:
 - **Project Structure**: The code is organized into separate classes to maintain modularity and code clarity.
 - **Documentation and Comments**: The code is well-documented with comments to facilitate understanding and maintenance.
 
-#### Author
+#### UML Diagram
 
-Carmen Luna
-[LinkedIn Profile](https://www.linkedin.com/in/carmen-luna-cllp/)
+In order to provide a visual representation of the class structure and relationships within the "Guess The Number" game project, the following UML diagram is presented:
+
+![UML Diagram](../Guess-The-Number/GuessTheNumber/img/UML.png)
+
+This diagram illustrates the various classes, their attributes, and their relationships, helping to understand the project's architecture and design.
+
+#### Understanding the UML Diagram
+
+- **Classes**: Each box represents a class in the project, showcasing its name and possibly its methods and attributes.
+- **Relationships**: Arrows between classes depict the relationships between them, such as inheritance, composition, or association.
+- **Attributes and Methods**: Inside the class boxes, you may find attributes (variables) and methods (functions) relevant to each class.
+
+Feel free to explore the UML diagram to gain a deeper understanding of the project's structure and design principles.
 
 #### Console Output
 
-![Console Output](./GuessTheNumber/img/project.jpg)
+![Console Output](../Guess-The-Number/GuessTheNumber/img/project.jpg)
 
 To run the game, simply start the project from the terminal and follow the instructions displayed. Have fun playing and exploring the logic behind the "Guess The Number" game in C#.
+
+#### Installation and Requirements
+
+To run the game on your local machine, make sure you have the [.NET SDK](https://dotnet.microsoft.com/download) installed. Once installed, follow these steps:
+
+1. Clone this repository to your local machine.
+2. Open a terminal in the project directory.
+3. Run the command `dotnet run` to start the game.
+
+#### Author
+
+Carmen Luna /
+[LinkedIn Profile](https://www.linkedin.com/in/carmen-luna-cllp/)

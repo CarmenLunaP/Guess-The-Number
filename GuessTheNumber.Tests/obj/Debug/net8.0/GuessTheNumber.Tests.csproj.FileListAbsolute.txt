@@ -173,3 +173,4 @@ C:\Users\usuario\Documents\Carmen\LABORATORIA\C#\Guess-The-Number\GuessTheNumber
 C:\Users\usuario\Documents\Carmen\LABORATORIA\C#\Guess-The-Number\GuessTheNumber.Tests\obj\Debug\net8.0\GuessTheNumber.Tests.pdb
 C:\Users\usuario\Documents\Carmen\LABORATORIA\C#\Guess-The-Number\GuessTheNumber.Tests\obj\Debug\net8.0\GuessTheNumber.Tests.genruntimeconfig.cache
 C:\Users\usuario\Documents\Carmen\LABORATORIA\C#\Guess-The-Number\GuessTheNumber.Tests\obj\Debug\net8.0\ref\GuessTheNumber.Tests.dll
+C:\Users\usuario\Documents\Carmen\LABORATORIA\C#\Guess-The-Number\GuessTheNumber.Tests\obj\Debug\net8.0\GuessTheNumber.Tests.sourcelink.json
