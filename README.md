@@ -1,4 +1,4 @@
-![Bannert](..\Guess-The-Number\img\Banner.png)
+![Bannert](./img/Banner.png)
 
 ### Guess The Number
 
