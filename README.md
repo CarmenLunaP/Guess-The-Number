@@ -1,4 +1,4 @@
-![Bannert](../Guess-The-Number/GuessTheNumber/img/Banner.png)
+![Bannert](./img/Banner.png)
 
 ### Guess The Number
 
@@ -37,7 +37,7 @@ The project addresses the following learning objectives:
 
 In order to provide a visual representation of the class structure and relationships within the "Guess The Number" game project, the following UML diagram is presented:
 
-![UML Diagram](../Guess-The-Number/GuessTheNumber/img/UML.png)
+![UML Diagram](./img/UML.png)
 
 This diagram illustrates the various classes, their attributes, and their relationships, helping to understand the project's architecture and design.
 
@@ -51,7 +51,7 @@ Feel free to explore the UML diagram to gain a deeper understanding of the proje
 
 #### Console Output
 
-![Console Output](../Guess-The-Number/GuessTheNumber/img/project.jpg)
+![Console Output](./img/project.jpg)
 
 To run the game, simply start the project from the terminal and follow the instructions displayed. Have fun playing and exploring the logic behind the "Guess The Number" game in C#.
 
