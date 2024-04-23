@@ -43,11 +43,12 @@ This diagram illustrates the various classes, their attributes, and their relati
 
 #### Understanding the UML Diagram
 
-- **Classes**: Each box represents a class in the project, showcasing its name and possibly its methods and attributes.
-- **Relationships**: Arrows between classes depict the relationships between them, such as inheritance, composition, or association.
-- **Attributes and Methods**: Inside the class boxes, you may find attributes (variables) and methods (functions) relevant to each class.
+- **Program**: This class contains the main method (`Main`) that starts the game.
+- **Game**: This class models the game and contains the main game logic, such as random number generation, guess verification, and managing the game flow.
+- **Player**: It's an abstract class serving as a base for the game's players. It contains methods and properties common to all players.
+- **HumanPlayer**: This class inherits from `Player` and represents the human player in the game. It contains logic for the human player to make a guess.
+- **AIPlayer**: This class also inherits from `Player` and represents the AI-controlled player in the game. It contains logic for the AI to make a guess.
 
-Feel free to explore the UML diagram to gain a deeper understanding of the project's structure and design principles.
 
 #### Console Output
 
